@@ -3,13 +3,16 @@ const mongoose = require('mongoose')
 const cors = require('cors')
 const port = 5000
 const mongoURL = "mongodb://localhost:27017/randColData"
-
 const app = express();
 
+const auth = require('./routes/auth');
 
-app.use(cors)
+//MIDDLEWARES
+app.use(cors())
 app.use(express.json())
 
+//ROUTES
+app.use('/auth',auth);
 
 //MONGODB Connection
 mongoose
