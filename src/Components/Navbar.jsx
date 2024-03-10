@@ -4,17 +4,21 @@ function Navbar() {
   return (
     <div>
         <nav>
-      <ul>
-        <Link to='/'><h2>App</h2></Link>
-        <Link to='/header'><h2>Header</h2></Link>
-        <Link to='/about'><h2>About</h2></Link>
-        <Link to='/contact'><h2>Contact</h2></Link>
-        <Link to='/footer'><h2>Footer</h2></Link>
-        <Link to='/randomnum'><h3>Random Number Generator</h3></Link>
-        <Link to='/randomcol'><h3>Random Color Generator</h3></Link>
-      </ul>
+        <div className=' m-4 border-bottom border-dark red'></div>
+          <div className='d-flex gap-5 text-lg justify-content-between'>
+        <Link to='/'>App</Link>
+        <Link to='/header'>Header</Link>
+        <Link to='/about'>About</Link>
+        <Link to='/contact'>Contact</Link>
+        <Link to='/footer'>Footer</Link>
+        <Link to='/dashboard'>Dashboard</Link>
+        <Link to='/login'>Login</Link>
+        <Link to='/signup'>Signup</Link>
+        <Link to='/randomnum'>Random Number Generator</Link>
+        <Link to='/randomcol'>Random Color Generator</Link>
+      </div>
       </nav>
-      <h2>--------------------------------------------------------</h2>
+        <div className=' m-4 border-bottom border-dark red'></div>
     </div>
   )
 }

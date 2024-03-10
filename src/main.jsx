@@ -9,7 +9,11 @@ import Contact from './Components/Contact.jsx'
 import Footer from './Components/Footer.jsx'
 import RandNumGenerator from './Components/RandNumGenerator.jsx'
 import RandColGenerator from './Components/RandColGenerator.jsx'
-import MongoDB from './Components/Datas/MongoDB.jsx';
+import Login from './Components/Login.jsx'
+import Dashboard from './Components/Dashboard.jsx'
+import Signup from './Components/Signup.jsx'
+
+
 const router = createBrowserRouter([
   {
     path : '/',
@@ -39,6 +43,18 @@ const router = createBrowserRouter([
         path : 'randomcol',
         element : <RandColGenerator/>
       },
+      {
+        path : 'login',
+        element : <Login/>
+      },
+      {
+        path : 'signup',
+        element : <Signup/>
+      },
+      {
+        path : 'dashboard',
+        element : <Dashboard/>
+      }
     ]
   },
   {
